@@ -3,8 +3,8 @@ function BarChart(data, {
     marginRight = 0, // the right margin, in pixels
     marginBottom = 30, // the bottom margin, in pixels
     marginLeft = 40, // the left margin, in pixels
-    width = 640, // the outer width of the chart, in pixels
-    height = 400, // the outer height of the chart, in pixels
+    width = 1400, // the outer width of the chart, in pixels
+    height = 600, // the outer height of the chart, in pixels
     xDomain, // an array of (ordinal) x-values
     xRange = [marginLeft, width - marginRight], // [left, right]
     yType = d3.scaleLinear, // type of y-scale
@@ -176,8 +176,8 @@ setTimeout(() => {
     draw.innerHTML = ""
     chart = BarChart(alphabet.slice(0, 50), {
         yLabel: "↑ Frequency",
-        width: 1200,
-        height: 500,
+        width: 1400,
+        height: 600,
         color: "steelblue",
         duration: 750 // slow transition for demonstration
     })
@@ -188,11 +188,11 @@ var draw = document.querySelector("#histogram")
 draw.addEventListener("mouseenter", function (event) {
     for (var i = 0; i < 7; i++) {
         setTimeout(() => {
-        }, 300);
+        }, 500);
         update = chart.update(alphabet.slice(0, 50 + i), {
             yLabel: "↑ Frequency",
-            width: 1200,
-            height: 500,
+            width: 1400,
+            height: 600,
             color: "steelblue",
             duration: 750 // slow transition for demonstration
         })
@@ -206,8 +206,8 @@ draw.addEventListener("mouseout", function (event) {
         draw.innerHTML = ""
         chart = BarChart(alphabet.slice(0, 56), {
             yLabel: "↑ Frequency",
-            width: 1200,
-            height: 500,
+            width: 1400,
+            height: 600,
             color: "steelblue",
             duration: 750 // slow transition for demonstration
         })

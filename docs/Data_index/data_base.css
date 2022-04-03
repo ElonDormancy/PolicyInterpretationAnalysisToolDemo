@@ -95,21 +95,6 @@ font-weight:bold;
 
 /** DEBUG **/
 
-#debug {
-  position: fixed;
-  top: 1em;
-  left: 1em;
-}
-#debug::after {
-  content: " Show Debug";
-  margin-left: 1.5em;
-  color: white;
-  white-space: nowrap;
-}
-
-#debug:checked ~ main {
-  --outline-width: 1px;
-}
 .card_final{
 	box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.1), 0 1em 2em rgba(0, 0, 0, 0.1);
 	background: rgb(233, 233, 233);
@@ -119,20 +104,14 @@ font-weight:bold;
 
 /** PAGE STYLING **/
 
-* { /* Poor Man's Reset */
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-}
 
-body {
+#part1 {
 	background: rgb(161, 149, 160);
 	color: rgb(255, 255, 255);
 	text-align: center;
 	font-size: calc(1em + 0.5vw);
 }
 
-header,
 main {
 	width: 80vw;
 	margin: 0 auto;
@@ -197,11 +176,11 @@ header {
 	object-fit: cover;
 }
 
-h1 {
+.h1 {
 	font-weight: 300;
 	font-size: 4em;
 	font-family: FZDBSJW;
-	background: linear-gradient(70deg, aquamarine, rgb(255, 255, 255));
+	background: linear-gradient(197deg, aquamarine, rgb(255, 255, 255));
 	-webkit-background-clip: text;
     color: transparent;
 }
