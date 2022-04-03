@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <title>Document</title>
+    <script src="./script.js"></script>
+</head>
+
+<body style="overflow:hidden">
+    <div style="margin:0 auto;width: 1200px;">
+        <div class="title">科技研究态势的政策解读分析系统</div>
+        <div class="sub_title">Policy Interpretation Analysis Tool</div>
+        <div id="search_">
+            <form onsubmit="event.preventDefault();" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Input Key Word" autofocus required />
+                <button type="submit" id="submit" onclick="btnjump()">分析</button>
+            </form>
+        </div>
+        <div id="loading_part">
+            <div class="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="loading">Loading...</div>
+        </div>
+    </div>
+</body>
+
+</html>
