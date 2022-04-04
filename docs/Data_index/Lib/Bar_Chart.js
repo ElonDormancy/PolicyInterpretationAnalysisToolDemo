@@ -171,7 +171,7 @@ d3.csv("Data/1995_2021.csv", function (d) {
     }
     alphabet.push(information)
 });
-
+var draw = document.querySelector("#histogram")
 setTimeout(() => {
     draw.innerHTML = ""
     chart = BarChart(alphabet.slice(0, 50), {
@@ -183,7 +183,7 @@ setTimeout(() => {
     })
 }, 100);
 
-var draw = document.querySelector("#histogram")
+
 
 draw.addEventListener("mouseenter", function (event) {
     for (var i = 0; i < 7; i++) {

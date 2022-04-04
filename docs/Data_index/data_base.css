@@ -1,6 +1,6 @@
 :root {
 	--card-height: 40vw;
-	--card-margin: 4vw;
+	--card-margin: 0vw;
 	--card-top-offset: 1em;
 	--numcards:4;
 	--outline-width: 0px;
@@ -112,6 +112,20 @@ font-weight:bold;
 	font-size: calc(1em + 0.5vw);
 }
 
+#part2 {
+	background: rgb(119, 166, 168);
+	color: rgb(255, 255, 255);
+	text-align: center;
+	font-size: calc(1em + 0.5vw);
+}
+
+#part3 {
+	background: rgb(230, 228, 144);
+	color: rgb(0, 0, 0);
+	text-align: center;
+	font-size: calc(1em + 0.5vw);
+}
+
 main {
 	width: 80vw;
 	margin: 0 auto;
@@ -187,11 +201,15 @@ header {
 
 h2 {
 	font-weight: 300;
-	font-size: 2em;
+	font-size: 1.9em;
     font-family: FZDBSJW;
 }
-
 h3 {
+	font-weight: 100;
+	font-size: 1.2em;
+    font-family: FZDBSJW;
+}
+.h3 {
 	font-weight: 100;
 	font-size: 1.2em;
     font-family: FZDBSJW;
@@ -221,5 +239,4 @@ aside {
 aside p {
 	margin-bottom: 1em;
 }
-
 
