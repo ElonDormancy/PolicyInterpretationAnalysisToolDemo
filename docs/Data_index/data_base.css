@@ -112,14 +112,14 @@ font-weight:bold;
 	font-size: calc(1em + 0.5vw);
 }
 
-#part2 {
+#part3 {
 	background: rgb(119, 166, 168);
 	color: rgb(255, 255, 255);
 	text-align: center;
 	font-size: calc(1em + 0.5vw);
 }
 
-#part3 {
+#part2 {
 	background: rgb(230, 228, 144);
 	color: rgb(0, 0, 0);
 	text-align: center;
