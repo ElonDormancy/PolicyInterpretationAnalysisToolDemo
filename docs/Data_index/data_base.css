@@ -113,8 +113,8 @@ font-weight:bold;
 }
 
 #part3 {
-	background: rgb(119, 166, 168);
-	color: rgb(255, 255, 255);
+	background: rgb(255, 255, 255);
+	color: rgb(0, 0, 0);
 	text-align: center;
 	font-size: calc(1em + 0.5vw);
 }
